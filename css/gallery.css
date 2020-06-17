@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #333;
+    color: #fff;
+}
+body a, body a:visited{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vw;
+
+}
+.flexbox:hover img{
+    opacity: 0.1;
+
+}
+
+.flexbox .item{
+    position: relative;
+    width: 33.33%;
+}
+
+.flexbox .item img{
+    width: 100%;
+    display: block;
+    transition: all 0.8s;
+}
+.flexbox .item:hover img{
+    opacity: 1;
+
+}
+
+@media (max-width: 860px) {
+    .flexbox {
+        height: 220vh;
+    }
+
+    .flexbox .item{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 667px){
+    .flexbox{
+        height: auto;
+    }
+}
+.flexbox .item{
+    width: 100%;
+
+}
